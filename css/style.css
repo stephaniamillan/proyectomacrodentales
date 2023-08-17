@@ -41,7 +41,9 @@ a:link{
   color:#e3e7ec;
 }
 
-
+a:visited{
+  color:#b8e6f5;
+}
 
 #anuncio1 {
   width: 100%;
@@ -59,6 +61,7 @@ a:link{
   /* align-content: center; */
   display: flex;
   align-items: center;
+  margin: auto auto;
 }
 
 aside {
@@ -72,7 +75,7 @@ aside {
 
 .imagen_lateral {
   width: 50%;
-  height: 50%;
+  height: 80%;
   margin: auto auto;
 }
 
@@ -141,11 +144,108 @@ footer {
   justify-content: center;
 }
 
-#texto_pie {
-  /* display: inline-block;
-  margin-left: 2em; */
-}
+
 
 small {
   /* display: block; */
 }
+
+#principal_nosotros {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  height: 350px;
+  gap: 10px;
+  margin: 0 0 1em;
+}
+
+#foto_nosotros {
+  grid-column: 1 / span 2 ;
+  grid-row: 1;
+  width: 100%;
+  background-color: beige;
+  display: flex;
+  place-content: center;
+}
+
+#contenido {
+  grid-column: 3 / span 4;
+  grid-row: 1;
+  background-color: whitesmoke;
+  /* align-content: center; */
+  display: flex;
+  align-items: center;
+  margin: auto auto;
+}
+
+#texto_nosotros {
+  padding: auto;
+  margin-bottom: 1em;
+}
+
+
+#principal_productos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  /* height: 600px; */
+  gap: 10px;
+  margin: 0 0 1em;
+  /* align-items: center; */
+
+
+}
+
+
+#producto {
+  /* width: 100%; */
+  /* height: 100px; */
+  background-color: #b8e6f5;
+  /* display: flex; */
+  /* align-items: center; */
+    /* justify-content: center; */
+
+}
+
+#imagen_producto {
+  /* margin-left: 1em; */
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#texto_producto {
+  display: block;
+  margin-left: 2em; 
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+} 
