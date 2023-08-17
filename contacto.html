@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Macrodentales</title>
+  </head>
+  <body>
+    <header>
+      <div id="centra_imagen_portada">
+        <img
+          src="img/logo_macrodentales.jpg"
+          alt="macrodentales"
+          id="imagen_portada"
+        />
+      </div>
+    </header>
+    <nav>
+      <a href="index.html"><span class="link">INICIO</span></a>
+      <a href="nosotros.html"><span class="link">NOSOTROS</span></a>
+      <a href="productos.html"><span class="link">PRODUCTOS</span></a>
+      <a href="contacto.html"><span class="link">CONTACTO</span></a>
+    </nav>
+
+    <section id="formulario_de_contacto">
+      <div class="container">
+        <form action="action_page.php">
+          <label for="fname">Nombres</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Su Nombre.."
+          />
+
+          <label for="lname">Apellidos</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Sus Apellidos.."
+          />
+
+          <label for="country">Ciudad</label>
+          <select id="country" name="country">
+            <option value="Tuluá">Tuluá</option>
+            <option value="Cali">Cali</option>
+            <option value="Buga">Buga</option>
+            <option value="Palmira">Palmira</option>
+          </select>
+
+          <label for="subject">Comentario</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Escriba su mensaje aquí.."
+            style="height: 200px"
+          ></textarea>
+
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <article id="texto_pie">
+        <span
+          >CALLE 27 # 36-10<br />
+          TULUA- VALLE DEL CAUCA<br />
+          COLOMBIA
+        </span>
+      </article>
+      <article id="texto_pie">
+        <span
+          >MOVIL / WHATSAPP<br />
+          315123456
+        </span>
+      </article>
+      <article id="texto_pie">
+        <span> INSTAGRAM </span>
+      </article>
+      <small>Elaborado por Estefania y Laura</small>
+    </footer>
+  </body>
+</html>
